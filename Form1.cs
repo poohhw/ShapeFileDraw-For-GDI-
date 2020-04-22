@@ -14,12 +14,15 @@ namespace ShapeMap
 {
     public partial class Form1 : Form
     {
-        private Shapefile shp;
-        private PaintEventArgs gView;
         public Form1()
         {
             InitializeComponent();
-            
+            //this.SetStyle(ControlStyles.DoubleBuffer, true);
+            //this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            //this.SetStyle(ControlStyles.UserPaint, true);
+            //this.UpdateStyles();
+            shapeView1.FilePath = Path.Combine(Application.StartupPath, "CTPRVN_201905", "TL_SCCO_CTPRVN.shp");
+
         }
 
         public void GetShapeFile(string filePath)
@@ -97,26 +100,9 @@ namespace ShapeMap
 
         private void shapeView1_Paint(object sender, PaintEventArgs e)
         {
-            gView = e;
-
-            shp = new Shapefile(Path.Combine(Application.StartupPath, "CTPRVN_201905", "TL_SCCO_CTPRVN.shp"));
-            shapeView1.shapeFile = shp;
-            shapeView1.DrawMap();
+            
         }
 
-        private void shapeView1_MouseClick(object sender, MouseEventArgs e)
-        {
-            //MessageBox.Show(e.X + "," + e.Y);
-        }
 
-        private void shapeView1_MouseMove(object sender, MouseEventArgs e)
-        {
-
-            //System.Drawing.Drawing2D.Matrix m = gView.Graphics.Transform;
-            //System.Drawing.Drawing2D.Matrix m2 = new System.Drawing.Drawing2D.Matrix();
-            //m2.Translate(200, 100);
-            //gView.Graphics.Transform = m2;
-
-        }
     }
 }

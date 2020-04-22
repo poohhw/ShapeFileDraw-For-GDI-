@@ -28,24 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 338);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
             // 
             // shapeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.Controls.Add(this.label1);
             this.Name = "shapeView";
             this.Size = new System.Drawing.Size(476, 353);
             this.Load += new System.EventHandler(this.shapeView_Load);
@@ -54,12 +43,9 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.shapeView_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.shapeView_MouseUp);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
     }
 }

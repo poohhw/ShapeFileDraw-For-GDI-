@@ -33,20 +33,18 @@
             // 
             // shapeView1
             // 
-            this.shapeView1.BackColor = System.Drawing.Color.White;
+            this.shapeView1.BackColor = System.Drawing.Color.Gray;
             this.shapeView1.Location = new System.Drawing.Point(251, 12);
             this.shapeView1.Name = "shapeView1";
-            this.shapeView1.Size = new System.Drawing.Size(1194, 771);
+            this.shapeView1.Size = new System.Drawing.Size(1049, 689);
             this.shapeView1.TabIndex = 0;
             this.shapeView1.Paint += new System.Windows.Forms.PaintEventHandler(this.shapeView1_Paint);
-            this.shapeView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.shapeView1_MouseClick);
-            this.shapeView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.shapeView1_MouseMove);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1444, 795);
+            this.ClientSize = new System.Drawing.Size(1312, 713);
             this.Controls.Add(this.shapeView1);
             this.Name = "Form1";
             this.Text = "Form1";
